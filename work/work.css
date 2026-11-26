@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Nunito:wght@400;700&display=swap');
+/* 한글 : Pretendard (html 에서 link) */
+
+/* CSS Reset */
+html, body, div , span, h1, h2, h3, h4, p, a, img, strong, i, dl, dt, dd, ul, li,
+article, footer, header, section { margin: 0; padding: 0; border: 0; font-size: 100%; }
+article, footer, header, section { display: block; }
+body { font-family:'Pretendard', sans-serif; font-size: 16px; color: #4f4a55;
+    background: #f0ebf0;}
+ul { list-style: none; }
+a { color: #333; text-decoration: none }
+img { border: 0; vertical-align: top; width: 100%;}
+* { box-sizing: border-box; }
+.hidden { display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff; }
+.wrap { overflow: hidden;}
+
+
+/* 카드 : 입체 없이 (입체는 누르는 버튼에만) */
+header .head_main, #contentArea section{background: rgba(255,255,255,.45); border: 1px solid rgba(255,255,255,.7);}
+
+/* header */
+header .head_main{position: relative; width: 1100px; margin: 100px auto 0; padding: 80px 70px 60px; border-radius: 30px;}
+header .eyebrow{font-family: 'Outfit', sans-serif; font-size: .95rem; letter-spacing: 2px; color: #d47a95;}
+header h2{display: inline-block; margin-top: 10px; font-family: 'Outfit', sans-serif; font-size: 4rem; font-weight: 700; line-height: 1.1;}
+header .txt{margin-top: 20px; font-size: 1.15rem; color: #666;}
+header .pdf{display: inline-flex; gap: 10px; align-items: center; margin-top: 30px; padding: 14px 32px; border-radius: 40px;
+    background: #f0ebf0; color: #d47a95; font-weight: 700;
+    box-shadow: 6px 6px 12px #d6cbd6, -6px -6px 12px #ffffff; font-size: 1.05rem; transition: all .2s ease;}
+header .pdf:active{box-shadow: inset 6px 6px 12px #d6cbd6, inset -6px -6px 12px #ffffff;}
+
+/* 프로젝트 */
+#contentArea{width: 1100px; margin: 50px auto 80px;}
+#contentArea .project{margin-bottom: 40px; padding: 50px 60px; border-radius: 30px;}
+#contentArea .num{font-family: 'Outfit', sans-serif; font-size: .9rem; color: #999;}
+#contentArea h3{display: inline-block; margin-top: 6px; font-family: 'Outfit', sans-serif; font-size: 2.2rem; font-weight: 700;}
+#contentArea .pj_inner{margin-top: 30px;} /* 사진은 위에 크게, 글은 아래 */
+#contentArea .pic{position: relative; height: 420px; border-radius: 26px; overflow: hidden;}
+#contentArea .pic img{height: 100%; object-fit: cover;} /* 칸 크기에 맞춰 사진 채우기 */
+#contentArea .pic.play{background: #262626;}
+#contentArea .pic.play img{object-fit: contain;} /* 세로로 긴 해커톤 사진은 잘리지 않게 */
+
+/* 사진에 마우스 올리면 동영상이 천천히 나타나며 재생 (work.js) */
+#contentArea .pic video{position: absolute; left: 0; top: 0; width: 100%; height: 100%; object-fit: contain; background: #262626;
+    opacity: 0; transform: scale(1); transition: opacity 1.2s ease, transform 1.2s ease;}
+#contentArea .pic.play:hover video{opacity: 1; transform: scale(1.04);}
+#contentArea .pic .hint{position: absolute; left: 20px; bottom: 20px; z-index: 2; padding: 8px 18px; border-radius: 20px;
+    font-size: .9rem; color: #fff; background: rgba(0,0,0,.45); transition: opacity .6s;}
+#contentArea .pic.play:hover .hint{opacity: 0;}
+
+#contentArea .txt_box{display: flex; gap: 50px; margin-top: 36px;}
+#contentArea .txt_head{width: 330px; flex: none;}
+#contentArea .txt_body{flex: 1;}
+#contentArea .txt_body .detail{margin-top: 0;}
+#contentArea .txt_body .detail dt:first-child{margin-top: 0;}
+#contentArea .kind{display: block; font-size: 1.2rem; font-weight: 700;}
+#contentArea .info{display: flex; flex-wrap: wrap; margin-top: 16px; font-size: .95rem; line-height: 1.9;}
+#contentArea .info dt{width: 60px; font-weight: 500;}
+#contentArea .info dd{width: calc(100% - 60px); color: #555;}
+#contentArea .detail{margin-top: 20px;}
+#contentArea .detail dt{margin-top: 16px; font-weight: 700; color: #d47a95;}
+#contentArea .detail dd{margin-top: 4px; font-size: .95rem; line-height: 1.8; color: #555;}
+#contentArea .detail dd li{position: relative; padding-left: 14px;}
+#contentArea .detail dd li::before{content: ''; position: absolute; left: 0; top: 12px; width: 5px; height: 5px; border-radius: 50%; background: #d47a95;}
+#contentArea .more{display: inline-flex; gap: 8px; align-items: center; margin-top: 22px; padding: 10px 24px; border-radius: 30px;
+    color: #d47a95; box-shadow: 5px 5px 10px #d6cbd6, -5px -5px 10px #ffffff; font-size: .95rem; font-weight: 700; transition: all .2s ease;}
+#contentArea .more:active{box-shadow: inset 5px 5px 10px #d6cbd6, inset -5px -5px 10px #ffffff;}
+
+/* footer */
+footer .footer_inner { text-align: center; padding: 0 0 80px;}
+footer .footer_inner p { font-weight: 300; color: #777;}
+footer .footer_inner a { display:inline-flex; gap: 10px; align-items: center; margin-top: 16px; padding: 18px 50px; border-radius: 40px;
+    background: #f0ebf0; color: #d47a95; font-weight: 700;
+    box-shadow: 6px 6px 12px #d6cbd6, -6px -6px 12px #ffffff; font-size: 1.2rem; transition: all .2s ease;}
+footer .footer_inner a:active{box-shadow: inset 6px 6px 12px #d6cbd6, inset -6px -6px 12px #ffffff;}
+
+@media screen and (max-width:1024px) {
+    header .head_main, #contentArea{width: 90%;}
+    #contentArea .txt_box{display: block;}
+    #contentArea .txt_head{width: auto; margin-bottom: 24px;}
+    #contentArea .pic{height: 340px;}
+}
+@media screen and (max-width:640px) {
+    header .head_main{padding: 70px 30px 40px;}
+    header h2{font-size: 2.8rem;}
+    #contentArea .project{padding: 40px 26px;}
+    #contentArea .pic{height: 220px; border-radius: 18px;}
+}
