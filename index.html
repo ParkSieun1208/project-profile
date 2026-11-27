@@ -6,7 +6,7 @@
 	<title>Portfolio - Park Si Eun</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css?v=3">
 	<script src="js/jquery-2.1.1.min.js"></script>
 	<script src="js/jquery.mousewheel.min.js"></script>
 	<script src="js/custom.js"></script>
@@ -23,7 +23,7 @@
 	<li><a href="#"><span>03</span><em>PC</em></a></li>
 	<li><a href="#"><span>04</span><em>Mobile</em></a></li>
 	<li><a href="#"><span>05</span><em>Responsive</em></a></li>
-	<li><a href="#"><span>06</span><em>Work</em></a></li>
+	<li><a href="#"><span>06</span><em>Experience</em></a></li>
 </ul>
 
 <!-- 전체 페이지 -->
@@ -67,7 +67,7 @@
 				</div>
 				<ul class="link_btn">
 					<li><a href="./resume/resume.html" target="_blank" title="온라인 이력서 새창으로 열림">Resume</a></li>
-					<li><a href="./work/work.html" target="_blank" title="학교 활동 페이지 새창으로 열림">Work</a></li>
+					<li><a href="./work/work.html" target="_blank" title="경험 페이지 새창으로 열림">Experience</a></li>
 					<li><a href="https://github.com/ParkSieun1208" target="_blank" title="GitHub 새창으로 열림">GitHub</a></li>
 					<li><a href="./pdf/storyboard.pdf" target="_blank" title="스토리보드 PDF 새창으로 열림">Storyboard</a></li>
 				</ul>
@@ -102,15 +102,15 @@
 				<div class="pf_skill">
 					<p>Skills</p>
 					<ul>
-						<li class="s_html">HTML5</li>
-						<li class="s_css">CSS3</li>
-						<li class="s_js">JavaScript</li>
-						<li class="s_jq">jQuery</li>
-						<li class="s_react">React</li>
+						<li class="s_html ic"><div class="icon"><img src="img/icon_html.png" alt=""></div>HTML5</li>
+						<li class="s_css ic"><div class="icon"><img src="img/icon_css.png" alt=""></div>CSS3</li>
+						<li class="s_js ic"><div class="icon"><img src="img/icon_js.png" alt=""></div>JavaScript</li>
+						<li class="s_jq ic"><div class="icon"><img src="img/icon_jquery.png" alt=""></div>jQuery</li>
+						<li class="s_react ic"><div class="icon"><img src="img/icon_react.png" alt=""></div>React</li>
 						<li class="s_git">Git &amp; GitHub</li>
-						<li class="s_figma">Figma</li>
-						<li class="s_ps">Photoshop</li>
-						<li class="s_unity">Unity</li>
+						<li class="s_figma ic"><div class="icon"><img src="img/icon_figma.png" alt=""></div>Figma</li>
+						<li class="s_ps ic"><div class="icon"><img src="img/icon_ps.png" alt=""></div>Photoshop</li>
+						<li class="s_unity ic"><div class="icon"><img src="img/icon_unity.png" alt=""></div>Unity</li>
 					</ul>
 				</div>
 			</div>
@@ -227,46 +227,69 @@
 		</div>
 	</section>
 
-	<!-- 06. Work : 학교 활동 -->
+	<!-- 06. Experience : 대학교 프로젝트와 활동 -->
 	<section id="work">
-		<h2 class="hidden">학교 활동</h2>
+		<h2 class="hidden">경험</h2>
 		<div class="window work_box">
 			<div class="work_head">
 				<div>
-					<p class="tit">Work</p>
-					<p class="sub">동양미래대학교 컴퓨터공학과에서 한 프로젝트와 활동</p>
+					<p class="tit">Experience</p>
+					<p class="sub">대학교에서 참여한 프로젝트와 활동입니다.</p>
 				</div>
-				<a class="visit" href="./work/work.html" target="_blank" title="학교 포트폴리오 페이지 새창으로 열림">학교 포트폴리오 보기 <i class="fa fa-arrow-right"></i></a>
+				<a class="visit" href="./work/work.html" title="경험 자세히 보기">자세히 보기 <i class="fa fa-arrow-right"></i></a>
 			</div>
-			<ul class="work_list">
+			<ol class="ex_line">
 				<li>
-					<a href="./work/work.html#w1" target="_blank" title="졸업작품 자세히 보기 새창으로 열림">
-						<span class="tape"></span>
-						<span class="kind">졸업작품</span>
-						<div class="pic"><img src="img/work1.jpg" alt="아기 돌봄 앱 화면"></div>
-						<strong>BabySence</strong>
-						<p>아기 돌봄 앱 서비스 · 웹접근성 적용</p>
+					<span class="date">2026.05 – 08</span>
+					<a href="./work/work.html#babysense" title="BabySense 자세히 보기">
+						<div class="pic"><img src="img/work1.jpg" alt="BabySense 앱 화면"></div>
+						<em class="num">01</em>
+						<strong>BabySense</strong>
+						<span class="kind">졸업작품 · 육아 기록 앱</span>
+						<p>화면 설계 · 앱 로고 · 웹접근성</p>
 					</a>
 				</li>
 				<li>
-					<a href="./work/work.html#w2" target="_blank" title="해커톤 자세히 보기 새창으로 열림">
-						<span class="tape"></span>
-						<span class="kind">교내 해커톤</span>
-						<div class="pic"><img src="img/work2.jpg" alt="해커톤 사진"></div>
-						<strong>생성형 AI 해커톤</strong>
-						<p>환경 주제 챗봇 만들기</p>
+					<span class="date">2025.05 – 09</span>
+					<a href="./work/work.html#feelchemy" title="Feelchemy 자세히 보기">
+						<div class="pic cream"><img src="img/work4.png" alt="Feelchemy 로고"></div>
+						<em class="num">02</em>
+						<strong>Feelchemy</strong>
+						<span class="kind">졸업작품 · 감정 기록 웹</span>
+						<p>콘텐츠 기획 · 소개 페이지</p>
 					</a>
 				</li>
 				<li>
-					<a href="./work/work.html#w3" target="_blank" title="동아리 프로젝트 자세히 보기 새창으로 열림">
-						<span class="tape"></span>
-						<span class="kind">전공동아리</span>
-						<div class="pic"><img src="img/work3.jpg" alt="유니티 게임 화면"></div>
-						<strong>Unity 게임 전시</strong>
-						<p>코엑스 전시 · 게임 UI/UX 담당</p>
+					<span class="date">2025.06 – 10</span>
+					<a href="./work/work.html#mindspace" title="Mind Space 자세히 보기">
+						<div class="pic"><img src="img/work3.jpg" alt="Mind Space 전시 포스터"></div>
+						<em class="num">03</em>
+						<strong>Mind Space</strong>
+						<span class="kind">전공동아리 MARS · VR</span>
+						<p>시작 화면 UI · 씬 전환 · 리플렛</p>
 					</a>
 				</li>
-			</ul>
+				<li>
+					<span class="date">2025.02.19 – 20</span>
+					<a href="./work/work.html#hackathon" title="그린어스 자세히 보기">
+						<div class="pic"><img src="img/work2.jpg" alt="그린어스 챗봇 화면"></div>
+						<em class="num">04</em>
+						<strong>그린어스</strong>
+						<span class="kind">교내 생성형 AI 해커톤</span>
+						<p>아이디어 · 대화 흐름 · 로고</p>
+					</a>
+				</li>
+				<li>
+					<span class="date">2024.05 – 06</span>
+					<a href="./work/work.html#teaching" title="HTML/CSS 멘토링 자세히 보기">
+						<div class="pic"><img src="img/work5.jpg" alt="HTML/CSS 멘토링 칠판 설명 모습"></div>
+						<em class="num">05</em>
+						<strong>HTML/CSS 멘토링</strong>
+						<span class="kind">전공동아리 MARS · 신입생 대상</span>
+						<p>수업 준비 · 진행 · 자료 정리</p>
+					</a>
+				</li>
+			</ol>
 		</div>
 	</section>
 </div>

@@ -4,147 +4,284 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박시은 학교 포트폴리오 - Work</title>
+    <title>Experience - Park Si Eun</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" href="work.css?v=38">
     <script src="https://kit.fontawesome.com/33cd326170.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrap">
-    <header>
-        <h1 class="hidden">박시은 학교 포트폴리오</h1>
-        <div class="head_main">
-            <p class="eyebrow">Dongyang Mirae University · Computer Engineering</p>
-            <h2>School Work</h2>
-            <p class="txt">동양미래대학교 컴퓨터공학과에서 진행한 프로젝트와 활동을 모았습니다.</p>
-            <a class="pdf" href="학교포트폴리오주소" target="_blank" title="학교 포트폴리오 사이트 새창으로 열림"><i class="fa-solid fa-arrow-up-right-from-square"></i> 학교 포트폴리오 사이트 보러 가기</a>
-        </div>
-    </header>
+
+    <h1 class="hidden">박시은 Experience</h1>
+    <div class="top_bar">
+        <a class="home" href="../index.html"><i class="fa-solid fa-arrow-left"></i> 메인으로</a>
+        <p>박시은 <span>·</span> Experience</p>
+    </div>
 
     <article id="contentArea">
-        <h2 class="hidden">학교 프로젝트</h2>
 
-        <!-- Project 1 -->
-        <section class="project" id="w1">
-            <p class="num">Project 1</p>
-            <h3>BabySense</h3>
-            <div class="pj_inner">
-                <div class="pic"><img src="./work1.jpg" alt="BabySense 아기 돌봄 앱 화면"></div>
-                <div class="txt_box">
-                    <div class="txt_head">
-                        <strong class="kind">졸업작품 팀 프로젝트</strong>
-                        <dl class="info">
-                            <dt>기간</dt><dd>2026.05 ~ 2026.08</dd>
-                            <dt>인원</dt><dd>5명</dd>
-                            <dt>역할</dt><dd>프론트엔드 (화면 설계)</dd>
-                            <dt>도구</dt><dd>Figma, GitHub</dd>
-                        </dl>
+        <!-- Project : BabySense -->
+        <section class="box project slide" id="babysense">
+            <p class="pj_num">Project 1</p>
+            <h2 class="tit"><span>BabySense</span></h2>
+            <div class="sl_inner">
+                <div class="sl_left">
+                    <div class="phones">
+                        <div class="phone back"><img src="./img/babysense_home.png" alt="BabySense 홈 화면 - 수유, 배변, 수면, 체온, 소음, 성장, 피부, 예방접종, 약·병원 기록 버튼"></div>
+                        <div class="phone front"><img src="./img/babysense_analysis.png" alt="BabySense 분석 화면 - 최근 7일 기록 요약과 체온 판정 기록"></div>
                     </div>
-                    <div class="txt_body">
-                        <dl class="detail">
-                            <dt>프로젝트</dt>
-                            <dd>아기의 수면·수유·체온 같은 기록을 분석해서, 초보 부모에게 지금 무엇을 해야 하는지 알려주는 아기 돌봄 앱 서비스</dd>
-                            <dt>담당 업무</dt>
-                            <dd>
-                                <ul>
-                                    <li>회원가입, 아기 정보 입력, 메인 홈, 체온·증상 입력 화면 설계</li>
-                                    <li>처음 쓰는 부모도 헤매지 않도록 화면마다 버튼 하나로 다음 단계로 이어지게 구성</li>
-                                    <li>학원에서 배운 웹접근성(이미지 alt, 키보드 포커스, 제목 구조, 색 대비, aria) 적용</li>
-                                </ul>
-                            </dd>
-                            <dt>협업</dt>
-                            <dd>기획·프론트엔드·백엔드·DB·AI로 역할을 나누고, GitHub에서 내 브랜치에 작업한 뒤 팀원 확인을 거쳐 합침</dd>
-                        </dl>
-                    </div>
+                </div>
+                <div class="sl_right">
+                    <h3>2026 졸업작품</h3>
+                    <dl class="sl_info">
+                        <dt>기간</dt><dd>2026.05 ~ 2026.08 (5인 팀)</dd>
+                        <dt>역할</dt><dd>UI/UX 디자인, 화면 설계, 앱 로고 제작</dd>
+                        <dt>기술</dt><dd>Flutter, Supabase, AWS EC2 / Figma, Stitch AI</dd>
+                        <dt>영상</dt><dd><a class="link" href="https://youtube.com/shorts/VAfMqwyRjoU" target="_blank" title="BabySense 시연 영상 새창으로 열림"><i class="fa-brands fa-youtube"></i> youtube.com/shorts/VAfMqwyRjoU</a></dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>프로젝트</dt>
+                        <dd>수유·수면·체온 등 아기의 하루 기록을 분석해<br>정상 / 주의 / 상담 권장으로 판정하고 다음 행동을 안내하는 육아 앱</dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>담당 업무</dt>
+                        <dd>
+                            <ul>
+                                <li>회원가입, 아기 정보 입력, 메인 홈, 체온·증상 입력 화면 설계 (Figma)</li>
+                                <li>필수 항목을 다 채워야 버튼이 켜지게 해 빈 기록을 막고, 38℃ 이상은 색으로 강조해 고열을 놓치지 않게 설계</li>
+                                <li>앱 로고 제작 (Stitch AI 시안 → Figma 보정)</li>
+                                <li>대체 텍스트, 색 대비, 포커스 등 웹접근성을 퍼블리셔가 챙길 기본으로 보고 화면마다 적용</li>
+                                <li>feature 브랜치 기반 GitHub 협업 / 발표 자료 일부 작성</li>
+                            </ul>
+                        </dd>
+                    </dl>
                 </div>
             </div>
         </section>
 
-        <!-- Project 2 -->
-        <section class="project" id="w2">
-            <p class="num">Project 2</p>
-            <h3>생성형 AI 해커톤</h3>
-            <div class="pj_inner">
-                <div class="pic play">
-                    <img src="./work2.jpg" alt="그린어스 챗봇 화면">
-                    <video src="./work.mp4" muted loop playsinline preload="metadata" aria-label="그린어스 챗봇 시연 영상"></video>
-                    <span class="hint"><i class="fa-solid fa-play"></i> 마우스를 올리면 시연 영상이 재생돼요</span>
+        <!-- Project : Feelchemy -->
+        <section class="box project slide" id="feelchemy">
+            <p class="pj_num">Project 2</p>
+            <h2 class="tit"><span>Feelchemy</span></h2>
+            <div class="sl_inner">
+                <div class="sl_left">
+                    <div class="browsers">
+                        <div class="browser back">
+                            <p class="bar"><span></span><span></span><span></span></p>
+                            <div class="screen"><img src="./img/feelchemy_emotion.png" alt="Feelchemy 감정 선택 화면 - 기쁨, 슬픔, 분노 등 감정 물약 카드"></div>
+                        </div>
+                        <div class="browser front">
+                            <p class="bar"><span></span><span></span><span></span></p>
+                            <div class="screen"><img src="./img/feelchemy_intro.png" alt="Feelchemy 소개 페이지 - 마음을 쓰다, 감정을 표현하다"></div>
+                        </div>
+                        <div class="badge"><img src="./img/feelchemy.png" alt="Feelchemy 로고"></div>
+                    </div>
                 </div>
-                <div class="txt_box">
-                    <div class="txt_head">
-                        <strong class="kind">교내 해커톤</strong>
-                        <dl class="info">
-                            <dt>기간</dt><dd>2025.02.19 ~ 2025.02.20</dd>
-                            <dt>결과물</dt><dd>환경 챗봇 '그린어스'</dd>
-                            <dt>역할</dt><dd>아이디어 회의, 챗봇 로고 제작, 발표</dd>
-                            <dt>도구</dt><dd>생성형 AI 챗봇</dd>
-                        </dl>
-                    </div>
-                    <div class="txt_body">
-                        <dl class="detail">
-                            <dt>프로젝트</dt>
-                            <dd>당일 나온 환경 주제에 맞춰, 팀이 제한된 시간 안에 실생활에서 쓸 수 있는 챗봇을 기획하고 만드는 교내 경진대회</dd>
-                            <dt>진행 과정</dt>
-                            <dd>
-                                <ul>
-                                    <li>사전 교육에서 챗봇의 정체성과 목표 정하기, 역할 설정, 명확한 지시문 작성법을 배움</li>
-                                    <li>팀원 모두 아이디어를 내고 함께 챗봇 방향을 정함</li>
-                                    <li>챗봇 '그린어스'의 로고를 만들고, 완성한 챗봇을 발표함</li>
-                                </ul>
-                            </dd>
-                            <dt>배운 점</dt>
-                            <dd>수상은 못 했지만, AI 서비스도 누구를 위해 무엇을 하는지 먼저 정해야 결과가 달라진다는 걸 알게 됨</dd>
-                        </dl>
-                    </div>
+                <div class="sl_right">
+                    <h3>2025 졸업작품</h3>
+                    <dl class="sl_info">
+                        <dt>기간</dt><dd>2025.05 ~ 2025.09 (5인 팀 위로하조)</dd>
+                        <dt>역할</dt><dd>콘텐츠 기획, 소개 페이지 제작, 발표 PPT 제작</dd>
+                        <dt>기술</dt><dd>HTML, CSS, JavaScript, PHP, Firebase</dd>
+                        <dt>영상</dt><dd><a class="link" href="https://youtu.be/CT_6l2dEqEo" target="_blank" title="Feelchemy 시연 영상 새창으로 열림"><i class="fa-brands fa-youtube"></i> youtu.be/CT_6l2dEqEo</a></dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>프로젝트</dt>
+                        <dd>하루 감정을 1~3개 골라 ‘물약’으로 빚고 일기로 남기는<br>감정 기록 · 위로 커뮤니티 반응형 웹 플랫폼</dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>주요 기능</dt>
+                        <dd>
+                            <ul class="chip">
+                                <li>감정 물약 제조</li>
+                                <li>감정 일기 · 달력</li>
+                                <li>편지 · 댓글</li>
+                                <li>타임트래블</li>
+                                <li>1:1 채팅</li>
+                                <li>감성 챗봇</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>담당 업무</dt>
+                        <dd>
+                            <ul>
+                                <li>감정 물약, 편지, 타임트래블 등 서비스 콘텐츠 기획 참여</li>
+                                <li>기능이 많아 처음 보면 헷갈리는 서비스라, ‘감정을 물약으로 빚는다’는 컨셉이 먼저 보이게 소개 페이지 구성</li>
+                                <li>흩어진 기능을 실제 사용 순서대로 묶어 서비스 흐름이 보이는 발표 PPT 제작</li>
+                            </ul>
+                        </dd>
+                    </dl>
                 </div>
             </div>
         </section>
 
-        <!-- Project 3 -->
-        <section class="project" id="w3">
-            <p class="num">Project 3</p>
-            <h3>Mind Space</h3>
-            <div class="pj_inner">
-                <div class="pic"><img src="./work3.jpg" alt="Mind Space 전시 안내 리플렛"></div>
-                <div class="txt_box">
-                    <div class="txt_head">
-                        <strong class="kind">전공동아리 MARS 프로젝트</strong>
-                        <dl class="info">
-                            <dt>기간</dt><dd>2025.06 ~ 2025.10</dd>
-                            <dt>전시</dt><dd>2025 동양미래 EXPO (코엑스)</dd>
-                            <dt>역할</dt><dd>VR팀 · 화면 UI, 리플렛 디자인</dd>
-                            <dt>도구</dt><dd>Unity, Figma</dd>
-                        </dl>
+        <!-- Project : Mind Space -->
+        <section class="box project slide" id="mindspace">
+            <p class="pj_num">Project 3</p>
+            <h2 class="tit"><span>Mind Space</span></h2>
+            <div class="sl_inner">
+                <div class="sl_left">
+                    <div class="vr_set">
+                        <div class="browser vr_back">
+                            <p class="bar"><span></span><span></span><span></span><em>시작 화면에서 연결되는 게임 · 불멍</em></p>
+                            <div class="screen"><img src="./img/mindspace_fire.jpg" alt="Mind Space VR 불멍 게임 화면 - 모닥불 앞에서 심호흡하기"></div>
+                        </div>
+                        <div class="browser vr_front">
+                            <p class="bar"><span></span><span></span><span></span><em>Unity 시작 화면</em></p>
+                            <div class="screen"><img src="./img/mindspace_start.jpg" alt="Mind Space Unity 시작 화면 - ANIMAL, FISHING, FIRE, MOLE 게임 선택 버튼"></div>
+                        </div>
+                        <div class="paper">
+                            <p class="paper_tag">Figma 리플렛</p>
+                            <div class="cover"><img src="./img/mindspace_leaflet_cover.png" alt="Mind Space 리플렛 표지 - MARS 22nd"></div>
+                            <div class="inside"><img src="./img/mindspace_leaflet_in.png" alt="Mind Space 리플렛 안쪽면 - 서비스 소개, Web, App, VR 화면 안내"></div>
+                        </div>
                     </div>
-                    <div class="txt_body">
-                        <dl class="detail">
-                            <dt>프로젝트</dt>
-                            <dd>설문·안면인식으로 감정 상태를 측정하고, 결과에 맞는 VR 게임(불멍, 낚시, 두더지, 동물 키우기)으로 마음을 돌보는 VR 심리치료 솔루션</dd>
-                            <dt>담당 업무</dt>
-                            <dd>
-                                <ul>
-                                    <li>Unity 시작 화면 배경과 버튼 화면 전환 작업</li>
-                                    <li>코엑스 관람객에게 나눠 준 3단 리플렛을 Figma로 디자인</li>
-                                    <li>어려운 기술 설명은 빼고, 실제 화면과 짧은 설명으로 '무엇을 체험할 수 있는지' 바로 보이게 구성</li>
-                                </ul>
-                            </dd>
-                            <dt>성과</dt>
-                            <dd>2025 제43회 동양미래 EXPO <strong>장려상</strong> 수상 (코엑스 전시)</dd>
-                        </dl>
+                </div>
+                <div class="sl_right">
+                    <h3>전공동아리 MARS 프로젝트 <em class="award"><i class="fa-solid fa-trophy"></i> EXPO 장려상</em></h3>
+                    <dl class="sl_info">
+                        <dt>기간</dt><dd>2025.06 ~ 2025.10 (VR팀) · 코엑스 전시</dd>
+                        <dt>역할</dt><dd>VR 시작 화면 UI, 씬 전환, 관람객 리플렛 디자인</dd>
+                        <dt>기술</dt><dd>Unity 2022.3 LTS, C#, XR Interaction Toolkit, URP / Figma</dd>
+                        <dt>영상</dt><dd><a class="link" href="https://youtu.be/M-o9yZu64eE?t=85" target="_blank" title="Mind Space 시연 영상 새창으로 열림"><i class="fa-brands fa-youtube"></i> youtu.be/M-o9yZu64eE</a> (담당 1:25 ~ 2:28)</dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>프로젝트</dt>
+                        <dd>설문·안면인식으로 감정 상태를 측정하고, 결과에 맞는 VR 게임으로<br>마음을 돌보는 앱 연동 VR 심리치료 솔루션</dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>주요 기능</dt>
+                        <dd>
+                            <ul class="chip">
+                                <li>앱 심리 측정</li>
+                                <li>결과 안내</li>
+                                <li>불멍</li>
+                                <li>낚시</li>
+                                <li>두더지 잡기</li>
+                                <li>동물 키우기</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>담당 업무</dt>
+                        <dd>
+                            <ul>
+                                <li>처음 써 본 Unity를 유튜브 강의로 익히고, 어울리는 UI 스킨을 직접 찾아 VR 시작 화면 구성</li>
+                                <li>4종 미니게임 선택 메뉴 제작, 전시 중 게임이 안 열리는 일이 없도록 버튼마다 씬 전환을 하나씩 확인</li>
+                                <li>코엑스 관람객용 3단 리플렛 디자인 (Figma)</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project : 생성형 AI 해커톤 -->
+        <section class="box project slide" id="hackathon">
+            <p class="pj_num">Project 4</p>
+            <h2 class="tit"><span>그린어스</span></h2>
+            <div class="sl_inner">
+                <div class="sl_left">
+                    <div class="phones">
+                        <div class="phone back"><img src="./img/hackathon_phone_start.png" alt="그린어스 챗봇 시작 화면 - 로고와 시작하기, 쓰레기 분리 배출 질문 버튼"></div>
+                        <div class="phone front"><img src="./img/hackathon_phone_check.png" alt="그린어스 생활 패턴 체크리스트 - 교통수단, 배달 음식, 일회용품, 텀블러, 장바구니 질문과 답변"></div>
                     </div>
+                </div>
+                <div class="sl_right">
+                    <h3>교내 생성형 AI 해커톤</h3>
+                    <dl class="sl_info">
+                        <dt>기간</dt><dd>2025.02.19 ~ 2025.02.20 (팀 참가, 자유 주제)</dd>
+                        <dt>역할</dt><dd>아이디어 기획, 대화 흐름 기획, 로고 디자인, 발표</dd>
+                        <dt>기술</dt><dd>ChatGPT GPTs (지시문 설계, Actions API 연동) / Canva</dd>
+                        <dt>영상</dt><dd><a class="link" href="https://youtube.com/shorts/t2-P0qDyf7c" target="_blank" title="그린어스 시연 영상 새창으로 열림"><i class="fa-brands fa-youtube"></i> youtube.com/shorts/t2-P0qDyf7c</a></dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>프로젝트</dt>
+                        <dd>생활 습관 5가지를 체크해 항목별 피드백과 추천 미션을 주고,<br>할인 카페 같은 실천 정보를 외부 API로 찾아 주는 친환경 생활 코치 챗봇</dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>주요 기능</dt>
+                        <dd>
+                            <ul class="chip">
+                                <li>생활 패턴 체크리스트</li>
+                                <li>피드백 · 추천 미션</li>
+                                <li>API 4종 정보 검색</li>
+                                <li>분리 배출 안내</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>담당 업무</dt>
+                        <dd>
+                            <ul>
+                                <li>새로운 주제가 쉽게 떠오르지 않아 팀과 아이디어 15개를 일단 다 꺼낸 뒤, 심사 기준(창의성·실용성·AI 활용)으로 걸러 주제 선정</li>
+                                <li>체크리스트 → 피드백 → 추천 미션으로 이어지는 대화 흐름 기획</li>
+                                <li>Canva로 챗봇 ‘그린어스’ 로고 제작</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity : 신입생 HTML/CSS 멘토링 -->
+        <section class="box project slide" id="teaching">
+            <p class="pj_num">Activity</p>
+            <h2 class="tit"><span>신입생 HTML/CSS 멘토링</span></h2>
+            <div class="sl_inner">
+                <div class="sl_left">
+                    <div class="class_set">
+                        <div class="browser cl_board">
+                            <p class="bar"><span></span><span></span><span></span><em>2024.05.27 수업 · 칠판 설명</em></p>
+                            <div class="screen"><img src="./img/teaching_board.jpg" alt="수업 현장 - 칠판에 블록, 인라인과 1000px 부모 div를 500px 두 칸으로 나누는 그림, flex 속성을 적어 설명한 모습"></div>
+                        </div>
+                        <div class="paper cl_note">
+                            <p class="paper_tag">수업 정리 자료</p>
+                            <div class="note"><img src="./img/teaching_note.jpg" alt="수업 정리 문서 - block 태그와 inline 태그 차이, 태그 종류 표"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl_right">
+                    <h3>전공동아리 MARS · 신입생 대상 수업</h3>
+                    <dl class="sl_info">
+                        <dt>시기</dt><dd>2024.05.13 ~ 2024.06.10 (2학년) · 매주 월요일</dd>
+                        <dt>역할</dt><dd>HTML/CSS 멘토 (동료 부원 1명과 공동)</dd>
+                        <dt>대상</dt><dd>동아리 1학년 신입생</dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>수업 주제</dt>
+                        <dd>
+                            <ul class="chip">
+                                <li>div 구조 · 태그</li>
+                                <li>block / inline</li>
+                                <li>inline-block</li>
+                                <li>Flexbox 정렬</li>
+                                <li>position · z-index</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>내가 한 일</dt>
+                        <dd>
+                            <ul>
+                                <li>준비하며 내가 설명하지 못하는 개념이 있다는 걸 알고, 선배에게 다시 배운 뒤 조언을 받아 수업 순서를 새로 짬</li>
+                                <li>칠판에 박스를 그려 가며 block / inline, flex 개념 설명</li>
+                                <li>설명 직후 따라 해 보는 실습 문제 출제 (부모 div 안 가운데 정렬, 1000px을 500px 두 칸으로 나누기)</li>
+                                <li>실습 시간에는 자리를 돌며 막힌 신입생의 코드를 같이 보고 해결</li>
+                                <li>수업 내용을 문서로 정리해 단톡방에 공유하고, 다음 수업(position, z-index 실습) 미리 안내</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="sl_txt">
+                        <dt>결과</dt>
+                        <dd>마지막 시간에 대부분의 신입생이 간단한 페이지를 직접 완성</dd>
+                    </dl>
                 </div>
             </div>
         </section>
     </article>
 
-    <footer>
-        <div class="footer_inner">
-            <p>학원에서 만든 웹사이트도 보고 싶으시다면?</p>
-            <a href="../index.html"><i class="fa-solid fa-arrow-left"></i> 메인 포트폴리오로 돌아가기</a>
-        </div>
-    </footer>
-</div>
-<script src="../js/jquery-2.1.1.min.js"></script>
-<script src="./work.js"></script>
+    </div>
 </body>
 </html>

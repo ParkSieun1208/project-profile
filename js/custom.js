@@ -24,6 +24,9 @@ $(document).ready(function(){
 		//브라우저의 높이값*박스의 순서값은 현재 박스의 스크롤 위치값과 동일
 		var nowTop = i*ht;	//실제 이동할 거리(스크롤의 top)
 
+		//이동할 section에 바로 show 붙이기 (내용이 빨리 뜨게)
+		$("section").eq(i).addClass("show");
+
 		//해당 스크롤 위치값으로 문서를 이동
 		$("html,body").stop().animate({"scrollTop":nowTop},1400);
 	});
@@ -69,6 +72,8 @@ $(document).ready(function(){
 		if (delta == 1 && ind!=0) { //+1
 			//변수 prev에 현재 휠을 움직인 section에서 이전 section의 offset().top위치 저장
 			var prev = $(this).prev().offset().top;
+			//이전 section에 바로 show 붙이기 (내용이 빨리 뜨게)
+			$(this).prev().addClass("show");
 			//문서 전체를 prev에 저장된 위치로 이동
 			$("html,body").stop().animate({"scrollTop":prev},'slow');
 			return false;
@@ -76,6 +81,8 @@ $(document).ready(function(){
 		}else if (delta == -1 && ind!=cnt) {  //-1
 			//변수 next에 현재 휠을 움직인 section에서 다음 section의 offset().top위치 저장
 			var next = $(this).next().offset().top;
+			//다음 section에 바로 show 붙이기 (내용이 빨리 뜨게)
+			$(this).next().addClass("show");
 			//문서 전체를 next에 저장된 위치로 이동
 			$("html,body").stop().animate({"scrollTop":next},'slow');
 			return false;

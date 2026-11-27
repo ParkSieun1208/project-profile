@@ -7,7 +7,7 @@ ol,ul { list-style: none; }
 a { outline:0; text-decoration:none; color:#4f4a55; }
 img { border:0; width: 100%; vertical-align: top;}
 em { font-style: normal;}
-html{ font-size: 16px;}
+html{ font-size: 14px;} /* 한 화면에 여유 있게 들어가도록 전체 글자 비율 축소 (16 → 14) */
 body { color:#4f4a55; font-family: 'Pretendard', sans-serif; background: #f0ebf0;}
 .hidden { display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden;}
 
@@ -54,7 +54,7 @@ section { width:100%; height:auto; position:relative; overflow:hidden; box-sizin
      display: flex; justify-content: center; align-items: center;}
 
 /* section 등장 : 아래에서 살짝 올라옴 (custom.js 에서 .show 붙임) */
-section .window{opacity: 0; transform: translateY(60px); transition: opacity 1s, transform 1s;}
+section .window{opacity: 0; transform: translateY(40px); transition: opacity .5s, transform .5s;} /* 등장 속도 1s → .5s */
 section.show .window{opacity: 1; transform: translateY(0);}
 
 
@@ -138,8 +138,8 @@ section.show .window{opacity: 1; transform: translateY(0);}
 
 
 /* ----- 02. Profile ----- */
-#profile .pf_box{width: 1500px; display: flex; gap: 80px; align-items: center;}
-#profile .pf_left{width: 400px; flex: none;}
+#profile .pf_box{width: 1300px; display: flex; gap: 80px; align-items: center;}
+#profile .pf_left{width: 340px; flex: none;}
 
 /* 학생증 카드 : 볼록 */
 #profile .id_card{position: relative; padding: 46px 36px 36px; border-radius: 30px; text-align: center; background: #f0ebf0;
@@ -148,7 +148,7 @@ section.show .window{opacity: 1; transform: translateY(0);}
      box-shadow: inset 2px 2px 4px #d6cbd6, inset -2px -2px 4px #ffffff;} /* 카드 구멍 */
 #profile .id_top{margin-top: 10px; font-family: 'Outfit', sans-serif; font-size: 1.05rem; letter-spacing: 3px; color: #8f8896;}
 #profile .id_top b{color: #d47a95;}
-#profile .pf_pic{width: 250px; height: 300px; margin: 20px auto; padding: 10px; border-radius: 24px; overflow: hidden; box-sizing: border-box;
+#profile .pf_pic{width: 210px; height: 252px; margin: 20px auto; padding: 10px; border-radius: 24px; overflow: hidden; box-sizing: border-box;
      box-shadow: inset 6px 6px 12px #d6cbd6, inset -6px -6px 12px #ffffff;} /* 사진은 쏙 들어간 액자 */
 #profile .pf_pic img{border-radius: 16px;}
 #profile .id_card strong{display: block; font-size: 2.1rem;}
@@ -174,12 +174,14 @@ section.show .window{opacity: 1; transform: translateY(0);}
 #profile .pf_skill li:nth-child(4n+2)::before{background: #9fd6c4;}
 #profile .pf_skill li:nth-child(4n+3)::before{background: #f3d48f;}
 #profile .pf_skill li:nth-child(4n)::before{background: #a7c6ea;}
+#profile .pf_skill li.ic::before{display: none;} /* 아이콘이 있는 칸은 색깔 점 대신 아이콘 */
+#profile .pf_skill li .icon{display: inline-block; width: 22px; height: 22px; margin-right: 8px; vertical-align: middle;}
 
 
 /* ----- 03~05. 프로젝트 공통 ----- */
-.pj_box{width: 1500px; display: flex; flex-direction: row-reverse; gap: 80px; align-items: center;} /* 화면은 오른쪽, 글은 왼쪽 */
+.pj_box{width: 1300px; display: flex; flex-direction: row-reverse; gap: 80px; align-items: center;} /* 화면은 오른쪽, 글은 왼쪽 */
 #mobile .pj_box{flex-direction: row;} /* 모바일만 반대로 */
-.pj_left{width: 700px; flex: none; text-align: center;}
+.pj_left{width: 600px; flex: none; text-align: center;}
 .pj_left .label{display: inline-block; margin-bottom: 26px; padding: 10px 26px; border-radius: 30px; color: #d47a95; font-size: 1.15rem; font-weight: 600;
      background: rgba(255,255,255,.6);}
 
@@ -191,20 +193,20 @@ section.show .window{opacity: 1; transform: translateY(0);}
 .browser .screen{height: 330px; overflow: hidden; border-radius: 16px;}
 
 /* 모니터 모양 틀 (PC) : 하얀 화면 + 핑크 턱 + 받침대 + 키보드·마우스 */
-.imac{width: 660px; margin: 0 auto; animation: deskFloat 5s infinite ease-in-out;}
+.imac{width: 540px; margin: 0 auto; animation: deskFloat 5s infinite ease-in-out;}
 .imac .monitor{position: relative; padding: 16px 16px 0; border-radius: 22px; background: #fff; box-shadow: 0 30px 50px rgba(150,120,140,.18);}
 .imac .cam{display: block; width: 6px; height: 6px; margin: -8px auto 6px; border-radius: 50%; background: #e2d8e2;}
 .imac .screen{position: relative; overflow: hidden; border-radius: 6px; background: #f0ebf0;}
 .imac .screen::after{content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%;
      background: linear-gradient(120deg, rgba(255,255,255,.35) 0%, rgba(255,255,255,0) 35%);} /* 화면 반사광 */
 .imac .chin{height: 44px; margin: 16px -16px 0; border-radius: 0 0 22px 22px; background: linear-gradient(180deg, #f7dbe3, #efc6d3);}
-.imac .stand{width: 110px; height: 64px; margin: 0 auto; border-radius: 0 0 10px 10px; background: linear-gradient(180deg, #e8bccb, #f3d3dd);}
+.imac .stand{width: 90px; height: 50px; margin: 0 auto; border-radius: 0 0 10px 10px; background: linear-gradient(180deg, #e8bccb, #f3d3dd);}
 .imac .desk{display: flex; justify-content: center; align-items: center; gap: 26px; margin-top: 18px;}
 .imac .keyboard{width: 360px; height: 16px; border-radius: 8px; background: #fff; box-shadow: 0 8px 14px rgba(150,120,140,.15);}
 .imac .mouse{width: 34px; height: 18px; border-radius: 18px 18px 14px 14px; background: #fff; box-shadow: 0 8px 14px rgba(150,120,140,.15);}
 
 /* 핸드폰 모양 틀 */
-.phone{width: 310px; margin: 0 auto;} /* 영상 안에 아이폰 틀이 이미 있어서 틀은 따로 안 만듦 */
+.phone{width: 250px; margin: 0 auto;} /* 영상 안에 아이폰 틀이 이미 있어서 틀은 따로 안 만듦 */
 .phone .screen video{display: block; width: 100%;} /* 모바일 화면 영상 (자동재생·소리 없음·반복) */
 
 .pj_right{flex: 1;}
@@ -234,21 +236,33 @@ section.show .window{opacity: 1; transform: translateY(0);}
 
 
 /* ----- 06. Work ----- */
-#work .work_box{width: 1500px;}
+#work .work_box{width: 1300px;}
 #work .work_head{display: flex; justify-content: space-between; align-items: flex-end;}
 #work .work_head .sub{margin-top: 18px; font-size: 1.25rem; color: #8f8896;}
 #work .work_head .visit{margin-top: 0;}
-#work .work_list{display: flex; gap: 50px; margin-top: 50px;}
-#work .work_list li{flex: 1;}
-#work .work_list a{position: relative; display: block; padding: 26px 26px 32px; border-radius: 30px; background: #f0ebf0;
-     border: 1px solid rgba(255,255,255,.4); box-shadow: 10px 10px 20px #d6cbd6, -10px -10px 20px #ffffff; transition: all .2s ease;}
-#work .work_list a:hover{transform: translateY(-6px);}
-#work .work_list a:active{transform: translateY(0); box-shadow: inset 8px 8px 16px #d6cbd6, inset -8px -8px 16px #ffffff;}
-#work .work_list .tape{position: absolute; top: 22px; right: 22px; width: 12px; height: 12px; border-radius: 50%; background: #e8a0b4;
-     box-shadow: 0 0 0 6px #f0ebf0, 0 0 12px 6px rgba(232,160,180,.5);} /* 반짝이는 점 */
-#work .work_list li:nth-child(2) .tape{background: #9fd6c4; box-shadow: 0 0 0 6px #f0ebf0, 0 0 12px 6px rgba(159,214,196,.5);}
-#work .work_list li:nth-child(3) .tape{background: #a7c6ea; box-shadow: 0 0 0 6px #f0ebf0, 0 0 12px 6px rgba(167,198,234,.5);}
-#work .work_list .kind{display: inline-block; margin-bottom: 16px; padding: 6px 16px; border-radius: 20px; font-size: 1.05rem; font-weight: 600; color: #d47a95; background: rgba(255,255,255,.7);}
-#work .work_list .pic{height: 270px; margin-bottom: 20px; border-radius: 20px; overflow: hidden;}
-#work .work_list strong{display: block; font-family: 'Outfit', 'Pretendard', sans-serif; font-size: 1.8rem; color: #4f4a55;}
-#work .work_list p{margin-top: 8px; font-size: 1.15rem; color: #8f8896;}
+#work .ex_line{position: relative; display: flex; gap: 20px; margin-top: 50px;} /* 최근순 타임라인 */
+#work .ex_line::before{content: ''; position: absolute; left: 0; right: 0; top: 16px; height: 2px; background: #e2d4e0;}
+#work .ex_line li{display: flex; flex-direction: column; align-items: center; flex: 1;}
+#work .date{position: relative; display: inline-block; padding: 6px 16px; border-radius: 20px; background: #d47a95;
+     font-family: 'Outfit', sans-serif; font-size: .95rem; font-weight: 600; color: #fff;}
+#work .ex_line a{display: block; flex: 1; width: 100%; box-sizing: border-box; margin-top: 24px; padding: 16px 16px 22px; border-radius: 22px; background: #f0ebf0; word-break: keep-all;
+     border: 1px solid rgba(255,255,255,.4); box-shadow: 8px 8px 16px #d6cbd6, -8px -8px 16px #ffffff; transition: all .2s ease;}
+#work .ex_line a:hover{transform: translateY(-6px);}
+#work .ex_line a:active{transform: translateY(0); box-shadow: inset 6px 6px 12px #d6cbd6, inset -6px -6px 12px #ffffff;}
+#work .ex_line .pic{height: 150px; border-radius: 14px; overflow: hidden; background: #262626;}
+#work .ex_line .pic img{height: 100%; object-fit: cover;}
+#work .ex_line .pic.cream{background: #fff5e4;}
+#work .ex_line .pic.cream img{object-fit: contain;}
+#work .ex_line .num{display: block; margin-top: 16px; font-family: 'Outfit', sans-serif; font-size: 1.15rem; font-weight: 700; color: #e8a0b4;}
+#work .ex_line strong{display: block; margin-top: 2px; font-family: 'Outfit', 'Pretendard', sans-serif; font-size: 1.5rem; color: #4f4a55;}
+#work .ex_line .kind{display: block; margin-top: 6px; font-size: .95rem; font-weight: 600; color: #d47a95;}
+#work .ex_line p{margin-top: 10px; padding-top: 10px; border-top: 1px solid #e2d4e0; font-size: 1rem; line-height: 1.6; color: #6a6470;}
+
+/* PDF로 저장(인쇄)할 때 : 한 화면 = 한 페이지 (1600 x 900, 16:9) */
+@media print {
+	@page { size: 1600px 900px; margin: 0; }
+	h1, #menu { display: none; } /* 고정 로고·메뉴는 PDF에서 숨김 */
+	section { width: 1600px; min-height: 900px; max-height: 900px; break-after: page; } /* custom.js 가 높이를 넣어도 900px로 맞춤 */
+	section:last-child { break-after: auto; }
+	section .window, #home .tag li { opacity: 1; transform: none; } /* 등장 애니메이션 없이 바로 보이게 */
+}
